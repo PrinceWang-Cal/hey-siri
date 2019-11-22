@@ -48,10 +48,13 @@ def combined_kites():
     F.add_edge(24, 18)
     F.add_edge(25, 15)
 
+    #connect 23 to 57
+    F.add_edge(23, 57)
+
     return F
 #the nodes in kite that are homes
 def kite_home():
     kite_home = [1, 2, 4, 9, 10, 11, 12, 15, 20, 21, 22, 24, 15]
     return kite_home
-nx.draw_networkx(combined_kites(), with_labels=True)
-plt.show()
+#nx.draw_networkx(combined_kites(), with_labels=True)
+#plt.show()

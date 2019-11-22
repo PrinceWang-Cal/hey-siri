@@ -4,10 +4,10 @@ import random
 
 #Dense group with many paths but only one is ideal(break dij/sp)
 #pick path with both home and normal locations
-# label 56 -> 86
+# label 56 -> 85
 def dense_graph():
     G = nx.gnp_random_graph(30, 0.4)
-    G = nx.relabel_nodes(G, lambda x: 56 + x)
+    G = nx.relabel_nodes(G, lambda x: 57 + x)
     return G
 #pick ten locations as home, remember to disconnect home and add shortest paths
 def dense_home():
@@ -17,6 +17,6 @@ def dense_home():
     return dense_home
 
 #G = dense_graph()
-#print(dense_home())
+#print(G.nodes())
 #nx.draw_networkx(G)
 #plt.show()
