@@ -1,5 +1,6 @@
 
 import networkx as nx
+import matplotlib.pyplot as plt
 
 # label 0 -> 25
 #kite prevent path finding method
@@ -48,7 +49,9 @@ def combined_kites():
     F.add_edge(25, 15)
 
     return F
-
-
-#nx.draw_networkx(combined_kites(), with_labels=True)
-#plt.show()
+#the nodes in kite that are homes
+def kite_home():
+    kite_home = [1, 2, 4, 9, 10, 11, 12, 15, 20, 21, 22, 24, 15]
+    return kite_home
+nx.draw_networkx(combined_kites(), with_labels=True)
+plt.show()

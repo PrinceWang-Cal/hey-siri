@@ -1,15 +1,22 @@
 import networkx as nx
 import matplotlib.pyplot as plt
+import random
 
 #Dense group with many paths but only one is ideal(break dij/sp)
 #pick path with both home and normal locations
 # label 56 -> 86
 def dense_graph():
     G = nx.gnp_random_graph(30, 0.4)
-    G = nx.relabel_nodes(G, lambda x: 56 + x);
+    G = nx.relabel_nodes(G, lambda x: 56 + x)
     return G
+#pick ten locations as home, remember to disconnect home and add shortest paths
+def dense_home():
+    dense_home = []
+    for i in range(10):
+       dense_home.append(random.randint(56, 85))
+    return dense_home
 
-G = dense_graph()
-print(G.number_of_nodes())
+#G = dense_graph()
+#print(dense_home())
 #nx.draw_networkx(G)
 #plt.show()
