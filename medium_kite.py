@@ -48,8 +48,6 @@ def combined_kites():
 
     return F
 
-#def medium_home()
-
 
 #nx.draw_networkx(combined_kites(), with_labels=True)
 #plt.show()
