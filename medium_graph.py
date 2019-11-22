@@ -26,7 +26,7 @@ def medium_homes():
     home_kite = mk.kite_home()
     home_dense = mh.dense_home()
     home_sparse = ms.sparse_home()
-    home_special = mo.speical_home()
+    home_special = mo.special_home()
     home_medium = home_kite + home_dense + home_sparse + home_special
     return home_medium
 
@@ -43,10 +43,10 @@ def medium_homes():
         add_edge_to_nodes.append(picked_loc)
     return add_edge_to_nodes """
 
-M_G = medium_graph()
-homes = medium_homes()
+#M_G = medium_graph()
+#homes = medium_homes()
 # print(M_G.nodes())
-print(M_G.number_of_nodes())
-print(len(homes))
+#print(M_G.number_of_nodes())
+#print(len(homes))
 # nx.draw_networkx(M_G)
 # plt.show()

@@ -20,7 +20,7 @@ def sub_graphs():
         small_graphs.append(small)
         homes += small_homes
         i = i + 15
-    return sub_graphs, homes
+    return small_graphs, homes
 
 
 # glue small graphs to get bigger one
@@ -34,11 +34,11 @@ def glue(small_graphs):
     return l_graph
 
 
-smalls, result_homes = sub_graphs()
+#smalls, result_homes = sub_graphs()
 # print(result_homes)
-print(len(result_homes))
-L_G = glue(smalls)
-print(L_G.number_of_nodes())
+#print(len(result_homes))
+#L_G = glue(smalls)
+#print(L_G.number_of_nodes())
 
 # nx.draw_networkx(L_G)
 # plt.show()

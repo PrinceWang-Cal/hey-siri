@@ -5,7 +5,6 @@ import matplotlib.pyplot as plt
 # return a small graph with start_node and the homes on this graph
 def special_g_map(start_node):
     special = nx.Graph()
-    homes = []
     special.add_edge(1, 2)
     special.add_edge(1, 7)
     special.add_edge(2, 3)

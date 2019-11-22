@@ -1,6 +1,6 @@
 import networkx as nx
 import matplotlib.pyplot as plt
-import random
+
 
 def tree_path_graph():
     special = nx.Graph()
@@ -26,10 +26,11 @@ def tree_path_graph():
 
     return special
 
-def speical_home():
-    special_home = [88, 90, 92, 97, 98, 99, 93, 94, 95, 96, 100]
-    return special_home
 
-#G = tree_path_graph()
-#nx.draw_networkx(G, with_labels=True)
-#plt.show()
+def special_home():
+    special_h = [88, 90, 92, 97, 98, 99, 93, 94, 95, 96, 100]
+    return special_h
+
+# G = tree_path_graph()
+# nx.draw_networkx(G, with_labels=True)
+# plt.show()

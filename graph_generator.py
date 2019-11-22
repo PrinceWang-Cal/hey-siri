@@ -1,6 +1,7 @@
 import large_graph as lg
 import medium_graph as mg
-
+import networkx as nx
+import matplotlib.pyplot as plt
 
 # generate medium graph
 def gen_medium_graph():
