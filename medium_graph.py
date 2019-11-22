@@ -4,6 +4,7 @@ import medium_sparse as ms
 import networkx as nx
 import matplotlib.pyplot as plt
 
+#86 nodes
 G1 = mk.combined_kites()
 G2 = mh.dense_graph()
 G3 = ms.sparse_graph()

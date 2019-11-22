@@ -1,7 +1,8 @@
 
 import networkx as nx
-import matplotlib.pyplot as plt
 
+# label 0 -> 25
+#kite prevent path finding method
 
 # construct a standard kite shape by hand (12 - 22)
 def det_kite():
