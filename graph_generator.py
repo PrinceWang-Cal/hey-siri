@@ -28,6 +28,4 @@ def gen_large_homes():
     return large_h
 
 
-L = gen_large_graph()
-nx.draw_networkx(L)
-plt.show()
+
