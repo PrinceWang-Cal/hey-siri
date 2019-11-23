@@ -3,6 +3,7 @@ import medium_graph as mg
 import networkx as nx
 import matplotlib.pyplot as plt
 
+
 # generate medium graph
 def gen_medium_graph():
     medium_g = mg.medium_graph()[0]
@@ -25,3 +26,8 @@ def gen_large_graph():
 def gen_large_homes():
     large_h = lg.large_graph()[1]
     return large_h
+
+
+L = gen_large_graph()
+nx.draw_networkx(L)
+plt.show()

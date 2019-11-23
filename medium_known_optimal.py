@@ -5,7 +5,7 @@ import matplotlib.pyplot as plt
 def tree_path_graph():
     special = nx.Graph()
     special.add_edge(87, 88)
-    special.add_edge(87, 100)
+    #special.add_edge(87, 100)
     special.add_edge(87, 91)
     special.add_edge(87, 89)
     special.add_edge(87, 93)
@@ -28,7 +28,7 @@ def tree_path_graph():
 
 
 def special_home():
-    special_h = [88, 90, 92, 97, 98, 99, 93, 94, 95, 96, 100]
+    special_h = [88, 90, 92, 97, 98, 99, 93, 94, 95, 96]
     return special_h
 
 # G = tree_path_graph()
